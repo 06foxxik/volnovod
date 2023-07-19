@@ -50,7 +50,6 @@ def plotting():
         clf()
         label.configure(text = "Заполните все поля!", bg = "lightgray")
         label.place(x=590,y=255)
-        #label.grid(row=0, column=4, columnspan=3, padx=10, pady=15, sticky=S+N)
         gcf().canvas.draw()
         return
     label.configure(text = " ")
@@ -323,15 +322,12 @@ def plotting():
     else:
         label = Label(window, text = "Частота ниже критической!", font = LARGE_FONT, bg = "white")
         label.place(x=590,y=255)
-        #label.grid(row=5, column=4, columnspan=2, padx=30, sticky=SW)
     subplots_adjust(wspace=0.5, hspace=0.5)
     gcf().canvas.draw()
     w_label = Label(window, text = "Критическая частота (ГГц): ", font = LARGE_FONT, bg = "white")
     w_label.place(x=30,y=550)
-    #w_label.grid(row=11, column=0, columnspan=4, padx=30, sticky=SW)
     wk_label = Label(window, text = f_kr/1e9, font = LARGE_FONT, bg = "white")
     wk_label.place(x=290,y=550)
-    #wk_label.grid(row=11, column=3, columnspan=4, padx=30, sticky=SW)
     
 # ИНТЕРФЕЙС
 
@@ -404,7 +400,6 @@ click.place(x=30,y=470,width=124,height=46)
 
 label = Label(window, font = LARGE_FONT, bg = "white")
 #label.place(x=440,y=110)
-#label.grid(row=10, column=14, columnspan=17, padx=10, pady=15, sticky=S+N)
 
 #time = 0
 label_time = Label(window, text = "Время: ", font = LARGE_FONT, bg = "white")
